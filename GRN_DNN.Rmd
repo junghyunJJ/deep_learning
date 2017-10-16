@@ -15,6 +15,7 @@ output:
 - 모든 데이터 (chip-seq, RNA-seq...)가 모든 조직에서 전부다 존재하는것이 아니기 때문에 Regulatory regions에 대한 예측 모델을 만들어 적용 할 필요가 있습니다.
 
 - 또한 Regulatory regions network에 적용하는 것 뿐만 아니라 가상인체모델을 만들때 다양하게 적용가능이 가능할것이라고 판단됩니다.
+
 *** 
 
 <br />
