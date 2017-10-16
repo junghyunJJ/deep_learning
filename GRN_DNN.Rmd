@@ -1,0 +1,95 @@
+---
+title: "Gene regulatory network (GRN) using deep learning"
+author: "Junghyun Jung"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
+---
+- 이번 과제작성에 딥러닝 적용을 [RFP](http://www.biosynergy.re.kr/sub0401/articles/view/tableid/korean-notice/id/264) 내용에서   2년차에 있었던 **"분자간 상호작용 지식 추출"** 부분에 추가하였습니다.
+
+- **분자간 상호작용 지식 추출**을 위해서 **Regulatory regions network**에 적용하는 것으로 작성을 했기 때문에 발표하실 때 도움이 될만한 내용들을 간단히 정리해 보았습니다.
+
+
+- 모든 데이터 (chip-seq, RNA-seq...)가 모든 조직에서 전부다 존재하는것이 아니기 때문에 Regulatory regions에 대한 예측 모델을 만들어 적용 할 필요가 있습니다.
+
+*** 
+
+<br />
+
+## Gene regulatory network from wiki
+- A [**gene regulatory network (GRN)**](https://en.wikipedia.org/wiki/Gene_regulatory_network) is a collection of molecular regulators that interact with each other and with other substances in the cell to govern the gene expression levels of mRNA and proteins.
+
+- 유전자의 발현조절에 주목하는 경우는 전사조절이 가장 중심적인 것이 되기 때문에 그의 네트워크를 **전사조절 네트워크(transcrptional regulatory network)** 라고 한다.
+
+<center>![](https://upload.wikimedia.org/wikipedia/commons/c/c4/Gene_Regulatory_Network.jpg)</center>
+  
+<center> Structure of a gene regulatory network </center>
+
+<br />
+
+<center>![](https://upload.wikimedia.org/wikipedia/commons/d/dc/DG_Network_in_Hybrid_Rice.png)</center>
+  
+<center> Example of a regulatory network </center>
+
+
+***
+
+<br />
+
+## Regulatory regions using deep learnig 
+- [**deeplearning-biology**](https://github.com/hussius/deeplearning-biology) : deep learning을 생물학에 적용한 tool 및 이에 대한 간단한 소개가 나와있는 github 입니다.
+
+- [**deeplearning-biology**](https://github.com/hussius/deeplearning-biology)에 [**FIDDLE (paper)**](https://www.biorxiv.org/content/early/2016/10/17/081380) 이라는 tool에 대한 소개가 있습니다.
+
+- [**FIDDLE (github)**](https://github.com/ueser/FIDDLE)은 **transcription start site (TSS)**와 **regulatory regions**을 예측하는 딥러닝 모델입니다.
+
+- 아주 고맙게도 [**FIDDLE (Youtube talk)**](https://www.youtube.com/watch?v=pcLTUsOm5pc&feature=youtu.be&list=PLlMMtlgw6qNjROoMNTBQjAcdx53kV50cS&t=2411)에 FIDDLE에 대한 발표영상이 올라와있습니다.
+
+- 또한 FIDDLE을 설명하는 저 영상에 **딥러닝에 대한 기본적인 설명**도 포함되어 있기 떄문에 참고하시면 아주 좋을것 같습니다.
+
+
+<center> ![](http://www.the-scientist.com/January2016/LT2_2.jpg) </center>
+
+<center> Regulatory regions에 대한 sequencing 데이터에 대한 간단한 설명 이미지 입니다.</center>
+
+<br />
+
+<center> ![](https://assets.illumina.com/content/dam/illumina-marketing/images/tools/sequencing/net-seq.png) </center>
+
+<center> [*NET-Seq*](https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/net-seq.html)에 대한 간단한 설명 이미지 입니다.</center>
+
+<br />
+
+*** 
+
+<br />
+
+## 유전자동의보감 단장님
+
+- 2016 생화학분자생물학회에서 이도헌 단장님꼐서 CODA 에 대해 발표한 [**영상**](http://www.ibric.org/vod/vod_detail.php?nNum=15282&szSearchKey=%C0%CC%B5%B5%C7%E5)입니다. 참고하시면 좋을것 같습니다.
+
+- 지금까지 찾아본 인터넷 자료중에 제일 자세히? 나와있는 [**CODA 기사**](http://www.lovesbeauty.co.kr/news/articleView.html?idxno=7447) 인것 같습니다. 여기에 콜롬버스 지도에 대한 비유와 남호정 교수님과 같이 만든 COCONUT 이란 DB에 대한 간략한 설명도 있습니다. 
+
+
+***
+
+<br />
+
+## 참고문헌
+
+- 리뷰논문 2개 입니다. 정리가 잘 되어있어서 읽어보시면 좋을것같습니다.
+1. [**Deep learning for computational biology**](http://msb.embopress.org/content/12/7/878)
+2. [**Machine Learning in Genomic Medicine: A Review of Computational Problems and Data Sets**](http://ieeexplore.ieee.org/document/7347331/?reload=true)
+
+
+***
+
+<br />
+
+
+
+
+
+
